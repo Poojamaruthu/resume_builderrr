@@ -1,0 +1,109 @@
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+}
+
+/* White popup box with soft purple accent */
+.popup-box {
+  background-color: #ffffff;
+  color: #222;
+  padding: 35px 45px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  width: 340px;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.popup-box h2 {
+  text-align: center;
+  color: #512da8;
+  margin-bottom: 15px;
+}
+
+.popup-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.popup-box input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #fafafa;
+  color: #222;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.popup-box input:focus {
+  outline: none;
+  border-color: #673ab7;
+  box-shadow: 0 0 0 2px rgba(103, 58, 183, 0.2);
+}
+
+.popup-box button {
+  background: #512da8;
+  border: none;
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.popup-box button:hover {
+  background: #673ab7;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 14px;
+  cursor: pointer;
+  color: #666;
+  font-size: 1.3rem;
+  transition: color 0.2s;
+}
+
+.close-btn:hover {
+  color: #000;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.auth-switch {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.auth-switch span {
+  color: #512da8;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.auth-switch span:hover {
+  text-decoration: underline;
+}
