@@ -18,7 +18,7 @@ const AiChatSidebar = ({ onClose }) => {
     setResponse("");
 
     try {
-      const res = await axios.post("http://localhost:5000/api/ai/ask", {
+      const res = await axios.post("https://resume-builderr-1.onrender.com/api/ai/ask", {
         prompt,
       });
 

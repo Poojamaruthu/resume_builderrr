@@ -132,7 +132,7 @@ const EditResume = () => {
   const handleSave = async () => {
     setIsSaving(true);
     try {
-      const res = await axios.post("http://localhost:5000/api/resume/save", {
+      const res = await axios.post("https://resume-builderr-1.onrender.com/api/resume/save", {
         username: user?.username || user?.email,
         templateName,
         resumeData,

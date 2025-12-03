@@ -19,7 +19,7 @@ const Profile = () => {
   // ✅ Fetch profile + user's resumes
   const fetchProfile = async () => {
     try {
-      const res = await axios.get(`http://localhost:5000/api/profile/${username}`);
+      const res = await axios.get(`https://resume-builderr-1.onrender.com/api/profile/${username}`);
       setUserData(res.data.user);
       setResumes(res.data.resumes || []);
       setUpdatedUser(res.data.user);
